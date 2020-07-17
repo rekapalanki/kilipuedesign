@@ -1,0 +1,29 @@
+/* ===== HELPER COLORS ===== */
+
+/* ===== BASIC STYLES AND TYPOGRAPHY ===== */
+
+/* Hint: font, line-height, letter-spacing, color, a text-decoration: none, a:hover, * box-sizing: border-box, etc. */
+
+* {
+box-sizing: border-box;
+}
+
+.heading-1 {
+    font: bold 2rem "matura mt script capitals", arial;
+    font-family: "matura mt script capitals", arial;
+}
+
+/* ===== LAYOUT STYLES ===== */
+
+/* Header Styles */
+
+/* Article Styles */
+
+/* Vertical Rhythm */
+
+/* Responsive Media */
+
+/* ==== COMPONENT STYLES ==== */
+
+/* ===== MEDIA QUERIES ===== */
+
