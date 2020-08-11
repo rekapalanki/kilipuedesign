@@ -1,8 +1,54 @@
-/* ===== HELPER COLORS ===== */
-
 /* ===== BASIC STYLES AND TYPOGRAPHY ===== */
 
-/* Hint: font, line-height, letter-spacing, color, a text-decoration: none, a:hover, * box-sizing: border-box, etc. */
+/* Hint: font, line-height, letter-spacing, color, a text-decoration: none, a:hover, * box-sizing: border-box, body position: relative, etc. */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Merriweather, 'Times New Roman', serif;
+    font-size: 1.125rem;
+    line-height: 2rem;
+    color: #333;
+    position: relative;
+}
+
+figcaption {
+    font-size: 0.75rem;
+}
+
+h1, h2 {
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+
+h1 {
+	font-size: 1.8rem;
+}
+
+h2 {
+	font-size: 1.6rem;
+	color: #e5127d;
+}
+
+.main-header p {
+	font-size: 1.125rem;
+	letter-spacing: 0.125rem;
+	color: #8c8e9b;
+}
+
+a {
+    text-decoration: none;
+    color: darkslategrey;
+}
+
+.post {
+    text-align: justify;
+}
+
+footer {
+    font-family: "matura mt script capitals";
+}
 
 /* ===== LAYOUT STYLES ===== */
 
@@ -10,13 +56,126 @@
 
 /* Header Styles */
 
+.main-header {
+    text-align: center;
+    padding: 1.25rem;
+	color: #fff;
+	background-color: #42444e;
+}
+
 /* Article Styles */
+
+.post {
+    width: 95%;
+    margin: 0 auto 1rem;
+    padding: 0.3125rem;
+}
+
+/* Primary content wrapper styles */
+
+@media (min-width: 768px) {
+    .primary-content {
+        float: right;
+        width: 66.6%;
+        max-width: 812px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .primary-content {
+        float: none;
+        position: absolute;
+        left: 20.625%;
+    }
+}
+
+/* Footer Styles */
+
+footer {
+    display: none;
+    width: 100%;                                /* KÖZÉPRE IGAZÍTANI! */
+    float: left;
+    left: 1rem;
+}
+
+footer a {
+    display: block;
+    position: relative;
+    float: right;
+    width: 100%;
+}
 
 /* Vertical Rhythm */
 
+h1,h2,h3,h4,h5,h6,hgroup,
+ul,ol,dd,
+p,figure,
+pre,table,fieldset,hr,.main-header,.primary-content {
+    margin-bottom: 1rem;
+}
+
 /* Responsive Media */
+
+img {
+    width: 100%;
+}
+
+.fig {
+	height: 0;
+	padding-bottom: 56.25%; /* 16:9 aspect ratio */
+	position: relative;
+}
+
+.fig iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
 
 /* ==== COMPONENT STYLES ==== */
 
+.button {
+	display: inline-block;
+    text-align: center;
+	border: 1px solid #8c8e9b;
+	color: #8c8e9b;
+	border-radius: 5px;
+	padding-right: 5px;
+	padding-left: 5px;
+	margin: 5px;
+	width: 100px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.button:hover {
+	border: 1px solid #b60e63; 
+    background-color: #b60e63;
+    color: ghostwhite;
+}
+
+.load {
+	display: block;
+	text-align: center;
+	padding: 0.625rem;
+	font-size: 1.25rem;
+	color: #8c8e9b;
+}
+
 /* ===== MEDIA QUERIES ===== */
 
+@media (min-width: 768px) {
+    .main-header {
+        position: fixed;
+        top: 0;
+        height: 100%;
+        width: 33.3%;
+    }
+}
+
+@media (min-width: 1025px) {
+    .main-header {
+        width: 20.625%;
+    }
+}
