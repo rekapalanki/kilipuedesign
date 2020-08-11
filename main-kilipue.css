@@ -8,22 +8,173 @@
 box-sizing: border-box;
 }
 
-.heading-1 {
-    font: bold 2rem "matura mt script capitals", arial;
-    font-family: "matura mt script capitals", arial;
+body {
+    font-family: Merriweather, 'Times New Roman', serif;
+    font-size: 1.125rem;
+    line-height: 2rem;
+    color: #333;
+    position: relative;
+}
+
+h1, h2 {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 1.8rem;
+}
+
+h1 {
+    color: white;
+}
+
+h2 {
+    color: rgb(255, 128, 0);
+}
+
+h3 {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 1.125rem;
+	letter-spacing: 0.125rem;
+	color: #8c8e9b;
+    text-shadow: -1px -1px white;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 128, 0);
+}
+
+article {
+    text-align: justify;
 }
 
 /* ===== LAYOUT STYLES ===== */
 
 /* Header Styles */
 
+header {
+    text-align: center;
+    padding: 1.25rem;
+	color: #fff;
+/*	background-color: #42444e; */
+/*  background-image: url(chili.jpg) no-repeat center center fixed; */
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 800%;
+    top: -270%;
+    left: -50%;
+    z-index: -1;
+    background: url(chili.jpg) no-repeat center center;
+    
+    transform: scale(.8);
+    
+}
+
 /* Article Styles */
+
+article, footer {
+    width: 95%;
+    margin: 0 auto 1rem;
+    padding: 0.3125rem;
+}
 
 /* Vertical Rhythm */
 
+h1,h2,h3,h4,h5,h6,hgroup,
+ul,ol,dd,
+p,figure,
+pre,table,fieldset,hr,header,article,.hero-image {
+    margin-bottom: 1rem;
+}
+
 /* Responsive Media */
 
+img {
+    width: 100%;
+}
+
+#profile {
+    width: 25%;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+    filter: sepia(50%);
+}
+
+#profile:hover {
+    transform: scale(1.01);
+    filter: sepia(0%);
+}
+
 /* ==== COMPONENT STYLES ==== */
+
+.button {
+	display: inline-block;
+    text-align: center;
+	border: 1px solid rgb(128, 128, 128);
+    background-color: black;
+	color: rgb(128, 128, 128);
+	border-radius: 5px;
+	padding-right: 5px;
+	padding-left: 5px;
+	margin: 5px;
+	width: 100px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.button:hover {
+	border: 1px solid rgb(102, 102, 102); 
+    background-color: rgb(102, 102, 102);
+    color: ghostwhite;
+}
+
+.hero-image {
+    background-image: url("profile.jpg");
+    background-color: #cccccc;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+    filter: sepia(30%);
+}
+
+.hero-image:hover {
+    filter: sepia(0);
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+#hero-button {
+    border: 1px solid rgb(102, 102, 102); 
+    background-color: rgb(102, 102, 102);
+    color: ghostwhite;
+}
+
+#hero-button:hover {
+    border: 1px solid rgb(128, 128, 128);
+    background-color: #42444e;
+}
+
+/* ===== FOOTER ===== */
+
+footer li {
+  display: inline-block;
+  margin-right: 1.5rem;
+}
+
 
 /* ===== MEDIA QUERIES ===== */
 
