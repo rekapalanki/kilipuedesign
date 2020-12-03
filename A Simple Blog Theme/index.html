@@ -1,65 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>A Simple Blog Theme</title>
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">     <!-- CSS RESET -->
-        <link rel="stylesheet" type="text/css" href="main-blog.css">                                   <!-- DEFAULT CSS TEMPLATE -->
-        <meta name="viewport" content="width=device-width, initial-scale=1"> 				           <!-- MEDIA QUERY OPTIMALIZATION FOR MOBILE -->
-        <link href="https://fonts.googleapis.com/css?family=Merriweather:300|Open+Sans" rel="stylesheet">
-        <link href="https://fonts.cdnfonts.com/css/matura-mt-script-capitals" rel="stylesheet">
-    </head>
-    <body>
-        
-        <header class="main-header">
-            <h1 class="">Blog Café</h1>
-            <p>A Simple Blog Theme</p>
-            <a class="button" href="/" target="_blank">Like</a>
-            <a class="button" href="/" target="_blank">Follow</a>
-        </header>
-        
-        <main class="primary-content">
-            
-            <article class="post" id="cool-article">
-                <h2>A Cool Article About Something Edgy</h2>
-                <figure>
-                    <img src="image-01 cool-article.jpg" alt="table with coffee and cookie and lavender">
-                    <figcaption>Photo by <a href="https://unsplash.com/@priscilladupreez?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Priscilla Du Preez</a> on <a href="https://unsplash.com/@priscilladupreez?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></figcaption>
-                </figure>
-                <p>Bacon ipsum dolor amet shank pancetta short ribs hamburger chislic prosciutto drumstick flank doner swine landjaeger ground round turducken ribeye. Tail ball tip turkey swine, meatball biltong hamburger spare ribs ham boudin shank flank strip steak chicken. Capicola flank fatback leberkas, chuck salami bresaola short loin sausage ham. Salami chicken cupim, spare ribs picanha beef ribs pork chop jerky. Bresaola ball tip jowl venison rump pork loin short loin cupim tail pancetta corned beef kielbasa buffalo flank. Cupim corned beef bacon drumstick, capicola ham landjaeger bresaola alcatra rump meatball.</p>
-                <figure class="fig">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/h4CyhQqAPpk" frameborder="0" allowfullscreen></iframe>
-                </figure>
-                <a href="#cool-article">Read More</a>
-            </article>
-            
-            <article class="post" id="strong-opinion">
-                <h2>A Strong Opinion On a Thing That Just Happened</h2>
-                <figure>
-                    <img src="image-02 strong-opinion.jpg" alt="a man playing guitar">
-                    <figcaption>Photo by <a href="https://unsplash.com/@priscilladupreez?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Priscilla Du Preez</a> on <a href="https://unsplash.com/@priscilladupreez?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></figcaption>
-                </figure>
-                <p>Sirloin bacon doner pork pastrami kevin pancetta salami tongue. Pork loin strip steak rump jowl. Sausage spare ribs frankfurter, salami tenderloin kevin shankle turkey strip steak. Drumstick chuck pork chop jowl, tongue burgdoggen hamburger boudin beef sausage short ribs biltong.</p>
-                <a href="#strong-opinion">Read More</a>
-            </article>
-            
-            <article class="post" id="listicle">
-                <h2>A Listicle For You and Your Boyfriend</h2>
-                <figure>
-                    <img src="image-03 listicle.jpg" alt="developers talking and laughing in the office">
-                    <figcaption>Photo by <a href="https://unsplash.com/@priscilladupreez?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Priscilla Du Preez</a> on <a href="https://unsplash.com/@priscilladupreez?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></figcaption>
-                </figure>
-                <p>Pork loin tail leberkas, kevin filet mignon salami venison frankfurter kielbasa ham hock landjaeger sausage. Kevin ball tip andouille, shoulder pastrami buffalo turducken. Prosciutto corned beef frankfurter short ribs chuck beef salami boudin ribeye spare ribs burgdoggen shank meatball. Biltong ham hamburger spare ribs chicken chislic, kielbasa short loin prosciutto picanha filet mignon. Pork loin drumstick chislic tail pork, meatball beef prosciutto pork belly ham hock salami porchetta short ribs pig cow.</p>
-                <a href="#listicle">Read More</a>
-            </article>
-            
-            <a class="load" href="#">Load more stories...</a>
-            
-        </main>
-        
-        <footer>
-            <a href="#">🌺 Kilipue Design</a>
-        </footer>
-        
-    </body>
+
+<head>
+    <meta charset="utf-8">
+    <title>A Simple Blog Theme</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+    <!-- CSS RESET -->
+    <link rel="stylesheet" type="text/css" href="main-blog.css"> <!-- DEFAULT CSS TEMPLATE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- MEDIA QUERY OPTIMALIZATION FOR MOBILE -->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300|Open+Sans" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/matura-mt-script-capitals" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="main-header">
+        <h1 class="">Blog Café</h1>
+        <p>A Simple Blog Theme</p>
+        <a class="button" href="/" target="_blank">Like</a>
+        <a class="button" href="/" target="_blank">Follow</a>
+    </header>
+
+    <main class="primary-content">
+
+        <article class="post" id="cool-article">
+            <h2>A Cool Article About Something Edgy</h2>
+            <figure>
+                <img src="image-01 cool-article.jpg" alt="table with coffee and cookie and lavender">
+                <figcaption>Photo by <a
+                        href="https://unsplash.com/@priscilladupreez?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Priscilla
+                        Du Preez</a> on <a
+                        href="https://unsplash.com/@priscilladupreez?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>
+                </figcaption>
+            </figure>
+            <p>Bacon ipsum dolor amet shank pancetta short ribs hamburger chislic prosciutto drumstick flank doner swine
+                landjaeger ground round turducken ribeye. Tail ball tip turkey swine, meatball biltong hamburger spare
+                ribs ham boudin shank flank strip steak chicken. Capicola flank fatback leberkas, chuck salami bresaola
+                short loin sausage ham. Salami chicken cupim, spare ribs picanha beef ribs pork chop jerky. Bresaola
+                ball tip jowl venison rump pork loin short loin cupim tail pancetta corned beef kielbasa buffalo flank.
+                Cupim corned beef bacon drumstick, capicola ham landjaeger bresaola alcatra rump meatball.</p>
+            <figure class="fig">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/h4CyhQqAPpk" frameborder="0"
+                    allowfullscreen></iframe>
+            </figure>
+            <a href="#cool-article">Read More</a>
+        </article>
+
+        <article class="post" id="strong-opinion">
+            <h2>A Strong Opinion On a Thing That Just Happened</h2>
+            <figure>
+                <img src="image-02 strong-opinion.jpg" alt="a man playing guitar">
+                <figcaption>Photo by <a
+                        href="https://unsplash.com/@priscilladupreez?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Priscilla
+                        Du Preez</a> on <a
+                        href="https://unsplash.com/@priscilladupreez?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>
+                </figcaption>
+            </figure>
+            <p>Sirloin bacon doner pork pastrami kevin pancetta salami tongue. Pork loin strip steak rump jowl. Sausage
+                spare ribs frankfurter, salami tenderloin kevin shankle turkey strip steak. Drumstick chuck pork chop
+                jowl, tongue burgdoggen hamburger boudin beef sausage short ribs biltong.</p>
+            <a href="#strong-opinion">Read More</a>
+        </article>
+
+        <article class="post" id="listicle">
+            <h2>A Listicle For You and Your Boyfriend</h2>
+            <figure>
+                <img src="image-03 listicle.jpg" alt="developers talking and laughing in the office">
+                <figcaption>Photo by <a
+                        href="https://unsplash.com/@priscilladupreez?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Priscilla
+                        Du Preez</a> on <a
+                        href="https://unsplash.com/@priscilladupreez?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>
+                </figcaption>
+            </figure>
+            <p>Pork loin tail leberkas, kevin filet mignon salami venison frankfurter kielbasa ham hock landjaeger
+                sausage. Kevin ball tip andouille, shoulder pastrami buffalo turducken. Prosciutto corned beef
+                frankfurter short ribs chuck beef salami boudin ribeye spare ribs burgdoggen shank meatball. Biltong ham
+                hamburger spare ribs chicken chislic, kielbasa short loin prosciutto picanha filet mignon. Pork loin
+                drumstick chislic tail pork, meatball beef prosciutto pork belly ham hock salami porchetta short ribs
+                pig cow.</p>
+            <a href="#listicle">Read More</a>
+        </article>
+
+        <article class="post" id="myFirstProgramming">
+            <h2>Az első programozási élményeim</h2>
+            <figure>
+                <img src="image-01 cool-article.jpg" alt="table with coffee and cookie and lavender">
+                <figcaption>Photo by <a
+                        href="https://unsplash.com/@priscilladupreez?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Priscilla
+                        Du Preez</a> on <a
+                        href="https://unsplash.com/@priscilladupreez?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>
+                </figcaption>
+            </figure>
+            <p>Mintha a programozás csupa szórakozás volna, úgy röpködnek az "élmény", "szórakoztató" stb. kifejezések a
+                neten. Valójában tényleg könnyebb úgy tanulni, ha élményszerűvé tesszük azt. 2018-ban kezdtem el
+                programozást tanulni, és azóta is a learning-by-doing megközelítés a leghatékonyabb számomra. <br>
+                Számomra az egész azzal kezdődött, hogy szembe jött velem egy online programozási tanfolyam hirdetése.
+                Igen, jó volt a marketingszöveg, hogy "Bárki megtanulhat programozni" - azért a méyebb ismeretek
+                megszerzéséhez szükséges némi alap angol nyelvismeret. Nem kell Shakespeare-i magasságokban gondolkodni,
+                mert a legtöbb <strong>jó</strong> előadó plain English-t használ. És itt a hangsúly azon van, hogy
+                valaki jó előadó kell, hogy legyen. Később szót ejtek a számomra igazán hatékony tanfolyamokról és
+                előadókról. Az online programozási tanfolyamnak volt egy felmérő tesztje, és felmérőre felkészítő
+                aloldala. Itt ajánlották többek között a <strong>LightBot</strong> nevű telefonos játékot, ami egy jó
+                kedvcsináló volt az algoritmusok világába.<br>
+                Ezután a legelső programozásról szóló tanfolyam számomra a <a
+                    href="https://sanfranciscoboljottem.com/">San Franciscoból Jöttem</a> podcast volt. Krisz
+                magyarul, jól érthetően adta elő a JavaScript alapjait. Az online kódszerkesztővel hosszas telepítgetés
+                nélkül is ki tudtam próbálni a bemutatott kódrészleteket. <br>
+                Ezután befizettem a <a href="https://codeberryschool.com/">CodeBerry</a> JavaScript bootcamp-jére, ahol
+                azt ígérték, hogy két hét alatt
+                megtanulhatom a JavaScript alapjait. Az online tanulófelületet olyan ügyesen szerkesztették meg,
+                hogy csak szuperlatívuszokban tudok beszélni róla. Minden kódot a böngészőben lehet szerkeszteni, a
+                tanfolyam léptéke jól követhető. Egyszerűen sikerélményt ad, hogy apró részletekben is lehet haladni,
+                gyakorlatiasan van felépítve, és nem 500 oldalas könyvekból kell bemagolni a bonyolult elméleti anyagot.
+                Az olvashatóság is nagyon jó, még mobiltelefonról is tudtam egyszer-kétszer haladni. Igaz, a
+                kódszerkesztőt könnyebb számítógépen kezelni, néha telefonon is lehet haladni a kódolással. Szóval, amit
+                megígértek, két hét alatt valóban stabil JavaScript alapokra tettem szert. <br>
+                Mit lehet kezdeni ezzel a kezdő JavaScript tudással? Tovább építgetni! Mivel a JavaScriptet többségében
+                webes applikációk fejlesztésére használják, a következő lépés a webprogramozás másik két leggyakrabban
+                használt programnyelvének, a HTML és CSS elsajátítása volt. Szintén a CodeBerry-vel, magyarul. A
+                CodeBerry-nek van egy szuper "Weblapkészítő ösvénye". Ez alapján haladva eljuthatunk egy olyan stabil
+                alapszintig, hogy képesek leszünk egy weboldalt egy ún. "drótváz" alapján megépíteni. A HTML-t igazán
+                egyszerű megérteni és használni. A kezdők ezzel is rövid idő alatt sikerélményekre tehetnek szert. Az
+                apró sikerek azért is fontosak a tanulásban, hogy fenntartsák a motivációt. Nem mondom, néha meggyűlt a
+                bajom a CSS igazítgatással, de ahogy haladtam előre a tanfolyammal, úgy éreztem, megvilágosodást nyertem
+                egy-egy korábbi elakadásban.<br>
+                Ha valaki komolyan gondolja a programozást, és hobbi szintnél többet szeretne kihozni belőle, a
+                CodeBerry-nél a "Weboldalkészítés gyakorlófeladatokkal" komoly portfóliót lehet felépíteni. <br>
+                A JavaScript alapokkal érdemes következő lépcsőfokként a jQuery library-vel megismerkedni. Utána pedig
+                az egyik leggyakrabban használt library-vel, a React.js könyvtárral érdemes továbbhaladni. A React.js
+                tanfolyamot időközben végigvettem, de számomra hiányoztak az "előfeltételekben" felsorolt tudás stabil
+                ismerete. Mivel fordítva csináltam, és először a React-et tanultam meg, és csak utána a jQuery-t, utólag
+                már látom, hogy jobb lett volna megfordítani a sorrendet, de ezt tanulópénznek veszem. Szerencsére
+                jófejek voltak a CodeBerry-nél. Mivel lassabban haladtam a tananyaggal, kértem, hogy hadd
+                hosszabbíthassam meg a hozzáférésemet a React tanfolyamhoz. Illetve a legfontosabb az volt, hogy
+                segítséget kaphattam a mentoroktól, ha elakadtam egy-egy kódrészletben. <br>
+                Ez alatt a React tanfolyam alatt ismertem meg <a href="https://wesbos.com/courses">Wes Bos</a>
+                tanfolyamait, aki valóban egy jó előadó. Ha már az előadóknál tartunk, <a
+                    href="https://www.taniarascia.com/">Tania Rascia</a> is nagyon érthetően, plain
+                English-t haszánlva magyarázza el az elméleti dolgokat. Illetve szemléletes gyakorlati példákat is
+                használ, amit én is újra meg tudtam írni, átírni, tudtam "játszani" a kóddal. Ismerkedni a
+                viselkedésével, mi történik, ha megváltoztatok valamit? A kezdők számára jó előadók, cikkírók azért is
+                jók, mert a kódjukat be is linkelik egy online kódszerkesztőben. Volt már, hogy valaki csak egy
+                kódrészletet adott meg, és én is meg szerettem volna írni, de valamiért nem működött. Van olyan, hogy
+                valamit a nulláról kell felépíteni, de a hatékony tanuláshoz számomra fontos, hogy először
+                ismerkedhessek az újonnan megtanult funkcióval.
+            </p>
+            <a href="#listicle">Read More</a>
+        </article>
+
+        <a class="load" href="#">Load more stories...</a>
+
+    </main>
+
+    <footer>
+        <a href="#">🌺 Kilipue Design</a>
+    </footer>
+
+</body>
+
 </html>
