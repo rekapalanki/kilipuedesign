@@ -1,0 +1,152 @@
+/* General styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+}
+
+body {
+  background: url('https://i.imgur.com/hpx9ZkH.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+#container {
+  background-color: rgba(0,0,0,0.5);
+  width: 320px;
+  height: 1120px;
+  margin: 10px auto;
+  border: 5px solid rgba(0, 38, 77, .2);
+  position: relative;
+  border-radius: 150px 150px 5px 5px;
+}
+
+/* Header styles */
+
+header {
+  max-width: 100%;
+  height: 320px;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+h2 {
+  background-color: rgba(0,0,0,.6);
+  position: absolute;
+  top: 170px;
+  width: 100%;
+  height: 70px;
+  padding: 2%;
+  text-align: center;
+  font: bold 3rem "Matura MT Script Capitals", "Cooper Black", "Old English Text MT", "Showcard Gothic", Arial;
+  color: white;
+}
+
+#small {
+  top: 245px;
+  height: 40px;
+  font-size: 1.15rem;
+}
+
+#mandala {
+  width: 100%;
+  filter: blur(1.5px);
+  transform: scale(1.1);
+  transition: transform 1.5s, filter 1.5s ease;
+  border: 5px solid rgba(0, 0, 0, .1);
+}
+
+#mandala:hover {
+  transform: scale(3) rotate(25deg);
+  transition: transform 2s, filter 2s ease-in-out;
+  filter: blur(0.0px);
+}
+
+/* Main content styles */
+
+main, footer {
+  font: 16px "Raleway", Helvetica, Arial;
+  padding: 5%;
+  color: white;
+  text-align: justify;
+}
+
+main {
+  position: absolute;
+  top: 320px;
+}
+
+h3, h4, footer {
+  text-align: center;
+}
+
+h3 {
+  font: bold 2rem "Matura MT Script Capitals", Helvetica, Arial;
+}
+
+p {
+  padding: 18px 0px;
+}
+
+#media {
+    height: 110px;
+}
+
+#thumbnail {
+  float: left;
+  margin: 2px 6px;
+  border: 3px solid black;
+}
+
+#thumbnail::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+hr {
+  border: 1px solid rgba(64, 64, 64);
+}
+
+/* Footer styles */
+
+footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  font: 16px "Raleway", Helvetica, Arial;
+}
+
+li {
+  display: inline;
+  margin: 20px;
+}
+
+a {
+  color: white;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 800px) {
+ 
+    #container {
+        width: 750px;
+        border-radius: 300px;
+    }
+    
+    header {
+        width: 100%;
+        border-radius: 400px 400px 5px 5px;
+    }
+
+    #mandala:hover {
+        transform: scale(1.5) rotate(15deg);
+        transition: transform 1s, filter 1s ease-in-out;
+    }
+    
+}
