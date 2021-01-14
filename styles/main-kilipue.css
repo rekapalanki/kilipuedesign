@@ -2,8 +2,6 @@
 
 /* ===== BASIC STYLES AND TYPOGRAPHY ===== */
 
-/* Hint: font, line-height, letter-spacing, color, a text-decoration: none, a:hover, * box-sizing: border-box, etc. */
-
 * {
 box-sizing: border-box;
 }
@@ -54,8 +52,6 @@ header {
     text-align: center;
     padding: 1.25rem;
 	color: #fff;
-/*	background-color: #42444e; */
-/*  background-image: url(chili.jpg) no-repeat center center fixed; */
     background-size: cover;
     position: relative;
     overflow: hidden;
@@ -70,9 +66,7 @@ header::before {
     left: -50%;
     z-index: -1;
     background: url(./chili.jpg) no-repeat center center;
-    
     transform: scale(.8);
-    
 }
 
 /* Article Styles */

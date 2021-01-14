@@ -1,7 +1,5 @@
 /* ===== BASIC STYLES AND TYPOGRAPHY ===== */
 
-/* Hint: font, line-height, letter-spacing, color, a text-decoration: none, a:hover, * box-sizing: border-box, body position: relative, etc. */
-
 * {
     box-sizing: border-box;
 }
@@ -18,23 +16,39 @@ figcaption {
     font-size: 0.75rem;
 }
 
-h1, h2 {
+h1, h2, h3 {
   font-family: 'Open Sans', Arial, sans-serif;
 }
 
 h1 {
-	font-size: 1.8rem;
+    font-size: 1.8rem;
 }
 
 h2 {
-	font-size: 1.6rem;
-	color: #e5127d;
+    font-size: 1.6rem;
+    text-align: left;
+	color: #be9e44;
+}
+
+h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.post-date {
+    font-size: 0.85rem;
+    font-style: italic;
+    color: #1a1a1a;
 }
 
 .main-header p {
 	font-size: 1.125rem;
 	letter-spacing: 0.125rem;
 	color: #8c8e9b;
+}
+
+strong {
+    font-weight: bold;
 }
 
 a {
@@ -52,8 +66,6 @@ footer {
 
 /* ===== LAYOUT STYLES ===== */
 
-/* Hint: position or float, width, height, display, margin, border, padding, text-align, etc. */
-
 /* Header Styles */
 
 .main-header {
@@ -69,6 +81,12 @@ footer {
     width: 95%;
     margin: 0 auto 1rem;
     padding: 0.3125rem;
+}
+
+li {
+    list-style-type: disc;
+    list-style-position: inside;
+    text-align: left;
 }
 
 /* Primary content wrapper styles */
@@ -89,22 +107,6 @@ footer {
     }
 }
 
-/* Footer Styles */
-
-footer {
-    display: none;
-    width: 100%;                                /* KÖZÉPRE IGAZÍTANI! */
-    float: left;
-    left: 1rem;
-}
-
-footer a {
-    display: block;
-    position: relative;
-    float: right;
-    width: 100%;
-}
-
 /* Vertical Rhythm */
 
 h1,h2,h3,h4,h5,h6,hgroup,
@@ -112,6 +114,14 @@ ul,ol,dd,
 p,figure,
 pre,table,fieldset,hr,.main-header,.primary-content {
     margin-bottom: 1rem;
+}
+
+.primary-content {
+    margin-top: 1rem;
+}
+
+h2 {
+    margin-bottom: 0rem;
 }
 
 /* Responsive Media */
@@ -150,8 +160,9 @@ img {
 }
 
 .button:hover {
-	border: 1px solid #b60e63; 
-    background-color: #b60e63;
+	border: 0;
+    background-color: #d8c690;
+    transition: background-color .2s ease-in-out;
     color: ghostwhite;
 }
 
@@ -163,6 +174,22 @@ img {
 	color: #8c8e9b;
 }
 
+/* Footer Styles */
+
+footer {
+    
+    width: 100%;
+    float: left;
+    left: 1rem;
+}
+
+footer a {
+    display: block;
+    position: relative;
+    float: right;
+    width: 100%;
+}
+
 /* ===== MEDIA QUERIES ===== */
 
 @media (min-width: 768px) {
@@ -172,6 +199,24 @@ img {
         height: 100%;
         width: 33.3%;
     }
+
+    /* CUSTOMIZED SCROLLBAR */
+
+    ::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+    }
+
+    ::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+        border-radius: 5px;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        border-radius: 5px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+    }
+    
 }
 
 @media (min-width: 1025px) {
