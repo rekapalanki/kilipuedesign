@@ -23,7 +23,7 @@ body {
     position: relative;
 }
 
-h1, h2, h4, footer {
+h1, h2, h4, .button, footer {
     font-family: 'Open Sans', Arial, sans-serif;
 }
 
@@ -36,8 +36,7 @@ h1 {
 
 #tagline {
     font-family: 'Open Sans', Arial, sans-serif;
-    font-size: 1.125rem;
-	letter-spacing: 0.125rem;
+    font-size: 1rem;
 	color: #8c8e9b;
     text-shadow: -1px -1px white;
 }
@@ -61,7 +60,7 @@ h4 {
     width: 100vw;
     font-size: 1.8rem;
     font-weight: bold;
-    color: #be9e44;
+    color: rgb(255, 128, 0);
     text-shadow: -1px -1px white;
 }
 
@@ -105,7 +104,7 @@ section {
 
 /* Vertical Rhythm */
 
-h1,h2,h3,h4,h5,h6,hgroup,
+h2,h3,h4,h5,h6,hgroup,
 ul,ol,dd,
 p,figure,
 pre,table,fieldset,hr,article,section,.hero-image {
@@ -139,11 +138,10 @@ img {
     background-color: black;
 	color: rgb(128, 128, 128);
 	border-radius: 5px;
-	padding-right: 5px;
-	padding-left: 5px;
-	margin: 5px;
-	width: 100px;
-	font-family: 'Open Sans', sans-serif;
+	padding: 0 2px;
+	margin: 2px;
+    width: 60px;
+    font-size: .875rem;
 }
 
 .button:hover {
@@ -213,12 +211,23 @@ strong {
     font-weight: bold;
 }
 
+#brand-font {
+    font-family: "matura mt script capitals";
+    font-size: 1.125rem;
+    font-weight: lighter;
+}
+
 /* ===== MEDIA QUERIES ===== */
 
 @media (min-width: 800px) {
 
     h1 {
         letter-spacing: 6px;
+    }
+
+    #tagline {
+        font-size: 1.125rem;
+        letter-spacing: 0.125rem;
     }
 
     h3 {
@@ -243,6 +252,13 @@ strong {
         left: 50%;
         transform: translate(-50%, -50%);
         color: white;
+    }
+
+    .button {
+        padding: 0 5px;
+	    margin: 5px;
+        width: 100px;
+        font-size: 1rem;
     }
 
     /* Vertical Rhythm */

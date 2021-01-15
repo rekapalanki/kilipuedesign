@@ -203,6 +203,7 @@ strong {
 #brand-font {
     font-family: "matura mt script capitals";
     font-size: 1.125rem;
+    font-weight: lighter;
 }
 
 /* ===== MEDIA QUERIES ===== */
