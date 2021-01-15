@@ -4,12 +4,17 @@
     box-sizing: border-box;
 }
 
+html {
+    min-height: 100%;
+    position: relative;
+}
+
 body {
+    margin-bottom: 140px; /* Equals the height of the footer +30px so the content doesnt flow below it */
     font-family: Merriweather, 'Times New Roman', serif;
     font-size: 1.125rem;
     line-height: 2rem;
     color: #333;
-    position: relative;
 }
 
 figcaption {
@@ -56,14 +61,6 @@ a {
     color: darkslategrey;
 }
 
-.post {
-    text-align: justify;
-}
-
-footer {
-    font-family: "matura mt script capitals";
-}
-
 /* ===== LAYOUT STYLES ===== */
 
 /* Header Styles */
@@ -84,9 +81,9 @@ footer {
 }
 
 li {
+    padding-left: 1rem;
     list-style-type: disc;
     list-style-position: inside;
-    text-align: left;
 }
 
 /* Primary content wrapper styles */
@@ -174,20 +171,38 @@ img {
 	color: #8c8e9b;
 }
 
-/* Footer Styles */
+/* ===== FOOTER STYLES ===== */
 
 footer {
-    
-    width: 100%;
-    float: left;
-    left: 1rem;
+    display: none;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 140px;
+    padding: 1.7rem 0;
+    font-size: .875rem;
+    text-align: center;
+    background: url(../styles/simple-footer.png) repeat center;
+    color: #fff;
 }
 
-footer a {
-    display: block;
-    position: relative;
-    float: right;
-    width: 100%;
+#copyright {
+    padding-bottom: 0.9rem;
+}
+
+#footerLinks a {
+    padding: 0 0.9rem;
+    text-decoration: none;
+    color: #CBB26A;
+}
+
+strong {
+    font-weight: bold;
+}
+
+#brand-font {
+    font-family: "matura mt script capitals";
+    font-size: 1.125rem;
 }
 
 /* ===== MEDIA QUERIES ===== */
@@ -198,6 +213,10 @@ footer a {
         top: 0;
         height: 100%;
         width: 33.3%;
+    }
+
+    .post {
+        text-align: justify;
     }
 
     /* CUSTOMIZED SCROLLBAR */

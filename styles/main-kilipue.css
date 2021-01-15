@@ -17,8 +17,8 @@ html {
 body {
     margin-bottom: 120px; /* Equals the height of the footer +30px so the content doesnt flow below it */
     font-family: Merriweather, 'Times New Roman', serif;
-    font-size: 1.125rem;
-    line-height: 2rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
     color: #333;
     position: relative;
 }
@@ -43,7 +43,7 @@ h1 {
 }
 
 h2 {
-    font-size: 1.8rem;
+    font-size: 1.625rem;
     color: rgb(255, 128, 0);
 }
 
@@ -71,6 +71,13 @@ a {
 
 section {
     text-align: justify;
+}
+
+li {
+    padding-left: 1rem;
+    list-style-type: disc;
+    list-style-position: inside;
+    text-align: left;
 }
 
 #contact-me li {
