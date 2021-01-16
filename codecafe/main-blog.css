@@ -93,6 +93,7 @@ li {
         float: right;
         width: 66.6%;
         max-width: 812px;
+        padding-bottom: 140px;
     }
 }
 
@@ -101,6 +102,7 @@ li {
         float: none;
         position: absolute;
         left: 20.625%;
+        padding-bottom: 140px;
     }
 }
 
@@ -109,7 +111,7 @@ li {
 h1,h2,h3,h4,h5,h6,hgroup,
 ul,ol,dd,
 p,figure,
-pre,table,fieldset,hr,.main-header,.primary-content {
+pre,table,fieldset,hr,.main-header,.primary-content,.load {
     margin-bottom: 1rem;
 }
 
@@ -174,7 +176,6 @@ img {
 /* ===== FOOTER STYLES ===== */
 
 footer {
-    display: none;
     position: absolute;
     bottom: 0;
     width: 100vw;
@@ -209,11 +210,12 @@ strong {
 /* ===== MEDIA QUERIES ===== */
 
 @media (min-width: 768px) {
+
     .main-header {
         position: fixed;
         top: 0;
         height: 100%;
-        width: 33.3%;
+        width: 33.4%; /* Slightly broader sidebar to prevent white line between sidebar and footer */
     }
 
     .post {
@@ -241,6 +243,28 @@ strong {
 
 @media (min-width: 1025px) {
     .main-header {
-        width: 20.625%;
+        width: 20.7%; /* Slightly broader sidebar to prevent white line between sidebar and footer */
+    }
+}
+
+/* Footer wrapper styles */
+
+@media (min-width: 768px) {
+    footer {
+        bottom: 0;
+        float: left;
+        width: 66.6%;
+    }
+}
+
+@media (min-width: 1025px) {
+    footer {
+        bottom: 0;
+        width: 79vw;
+    }
+
+    .footer-in-wrapper {
+        width: 79.375%;
+        left: 20.625%;
     }
 }

@@ -138,10 +138,10 @@ img {
     background-color: black;
 	color: rgb(128, 128, 128);
 	border-radius: 5px;
-	padding: 0 2px;
-	margin: 2px;
-    width: 60px;
-    font-size: .875rem;
+    padding: 0 5px;
+	margin: 5px;
+    width: 100px;
+    font-size: 1rem;
 }
 
 .button:hover {
@@ -252,13 +252,6 @@ strong {
         left: 50%;
         transform: translate(-50%, -50%);
         color: white;
-    }
-
-    .button {
-        padding: 0 5px;
-	    margin: 5px;
-        width: 100px;
-        font-size: 1rem;
     }
 
     /* Vertical Rhythm */
