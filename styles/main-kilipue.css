@@ -66,19 +66,50 @@ h4 {
 
 a {
     text-decoration: none;
-    color: rgb(255, 128, 0);
+    color: rgb(207, 120, 33);
 }
 
-li {
-    padding-left: 1rem;
-    list-style-type: disc;
-    list-style-position: inside;
-    text-align: left;
+a:hover {
+    color: rgb(255, 128, 0);
+    transition: color .5s ease-in-out;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li::before {
+    content: "\2022";
+    color:  rgb(207, 120, 33);
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    padding-left: .5em;
+  }
+
+ul li.technologies::before {
+    content: "";
+    padding-left: 0;
+}
+
+i {
+    padding-right: .75rem;
+    color:  rgb(207, 120, 33);
+}
+
+i:hover {
+    color: rgb(255, 128, 0);
+    transition: color .5s ease-in-out;
 }
 
 #contact-me li {
     display: inline-block;
     margin-right: 1.5rem;
+}
+
+#contact-me li::before {
+    content: "";
+    padding-left: 0;
 }
 
 /* ===== LAYOUT STYLES ===== */
