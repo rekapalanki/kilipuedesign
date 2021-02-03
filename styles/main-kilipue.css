@@ -105,6 +105,7 @@ i:hover {
 #contact-me li {
     display: inline-block;
     margin-right: 1.5rem;
+    padding-left: 0;
 }
 
 #contact-me li::before {
@@ -138,8 +139,12 @@ section {
 h2,h3,h4,h5,h6,hgroup,
 ul,ol,dd,
 p,figure,
-pre,table,fieldset,hr,article,section,.hero-image {
+pre,table,fieldset,hr,article,section {
     margin-bottom: 1.3rem;
+}
+
+.hero-image {
+    margin-bottom: 2.6rem;
 }
 
 /* Responsive Media */
@@ -222,7 +227,7 @@ footer {
     width: 100vw;
     height: 140px;
     padding: 1.7rem 0;
-    background: url(./simple-footer.png) repeat center;
+    background: #000 url(./simple-footer.png) repeat center;
     font-size: .875rem;
     text-align: center;
     color: #fff;
