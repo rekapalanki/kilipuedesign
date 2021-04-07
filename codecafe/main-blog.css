@@ -30,14 +30,25 @@ h1 {
 }
 
 h2 {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     text-align: left;
 	color: #be9e44;
 }
 
 h3 {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+h4 {
     font-size: 1.25rem;
     font-weight: bold;
+}
+
+h5 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .post-date {
@@ -56,9 +67,18 @@ strong {
     font-weight: bold;
 }
 
+em {
+    font-style: italic;
+}
+
 a {
     text-decoration: none;
-    color: darkslategrey;
+    color: hsl(20, 100%, 50%);
+}
+
+a:hover {
+    text-decoration: underline;
+    color: hsl(20, 80%, 41%);
 }
 
 /* ===== LAYOUT STYLES ===== */
