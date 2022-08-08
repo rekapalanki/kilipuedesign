@@ -1,0 +1,126 @@
+/* GENERAL STYLES */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    margin-bottom: 120px;
+    text-align: center;
+    font-family: Calibri;
+    font-size: 1.3rem;
+    background-color: #000;
+    color: #fff;
+}
+
+/* MAIN CONTENT STYLES */
+
+img {
+    height: 200px;
+    border-radius: 20px;
+}
+
+h2, img {
+    margin: 1.5rem 0;
+}
+
+h1 {
+    margin: 0 auto;
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding: 2rem;
+}
+
+span {
+    background-color: #CBB26A;
+    background-image: linear-gradient(to right, #a16c3a, #CBB26A 48%, #ffff99, #CBB26A 52%, #a16c3a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #CBB26A;
+}
+
+.wrapper {
+    width: 300px;
+    margin: 0 auto;
+    padding: 1.7rem 0;
+    background-color: #333;
+}
+
+.colors {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+    padding-top: 60px;
+    font-size: 1rem;
+    border: 5px solid #333;
+}
+
+#one { background-image: linear-gradient(to right, #a16c3a, #ffff99, #a16c3a); }
+
+#two { background-color: #000; }
+
+#three { background-color: #d8c690; }
+
+#four { background-color: #be9e44; }
+
+#five { background-color: #1a1a1a; }
+
+#six { background-color: #e5d9b6; }
+
+/* FOOTER STYLES */
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 120px;
+    padding: 1.7rem 0;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+}
+
+#copyright {
+    padding-bottom: 0.9rem;
+}
+
+strong {
+    font-weight: bold;
+}
+
+small, nav a {
+    font-size: 1rem;
+}
+
+nav a {
+    padding: 0 0.9rem;
+    text-decoration: none;
+    color: #be9e44
+}
+
+/* MEDIA QUERIES FOR LARGE SCREEN */
+
+@media (min-width: 800px) {
+
+    h1 {
+        font-size: 72px;
+    }
+
+    img {
+        height: 280px;
+    }
+
+    .wrapper {
+        width: 700px;
+    }
+}

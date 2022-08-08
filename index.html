@@ -8,150 +8,268 @@
     <meta name="description" content="Kilipue Design is a webpage development site. See references under 'References'.">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Kilipuedesign Introduction</title>
+    <title>Kilipuedesign</title>
 
     <!--  LINKS AND SCRIPTS  -->
 
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
     <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="./styles/main-kilipue.css">
+    <link rel="stylesheet" type="text/css" href="./style.css">
     <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:300|Open+Sans" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/matura-mt-script-capitals" rel="stylesheet">
-    <script src="./scripts/kilipue-main.js" defer></script>
-    <link rel="shortcut icon" type="image/x-icon" href="./public/volcano.png"> <!-- Favicon -->
-    <meta name="theme-color" content="#be9e44" /> <!-- Change Android mobile address bar color -->
+    <link rel="shortcut icon" type="image/x-icon" href="./public/icons/volcano.png"> <!-- Favicon -->
+    <meta name="theme-color" content="#283540" />
+    <!-- Change Android mobile address bar color -->
 
 </head>
 
 <body>
 
-    <header>
-        <h1>KILIPUE DESIGN</h1>
-        <p id="tagline">― a journey to programming ―</p>
-        <a class="button" href="/">Main</a>
-        <a class="button" href="#about">About</a>
-        <a class="button" href="./codecafe/index.html" target="_blank">Blog</a>
-        <a class="button" href="#contact-me">Contact</a>
+    <header class="fullpage-header">
+
+        <div class="nav-wrapper">
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./codecafe/index.html">Writings</a></li>
+                    <img class="logo-small" src="./public/logo/namecheap-monochrome.png" alt="kilipuedesign logo">
+                    <li> <a href="./projects.html">Projects</a></li>
+                    <li><a href="">Learn</a></li>
+                    <li><a href="mailto:reka.palanki@gmail.com">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="wrapper">
+            <h1 class="headline">Welcome to kilipuedesign!</h1>
+            <div class="tagline">
+                <p class="tag">I am committed to create beautiful webpages with modern design and state-of-the-art
+                    technology. </p>
+            </div>
+        </div>
+
     </header>
 
     <main>
-
-        <div class="primary-content">
-
-            <figure class="hero-image">
-                <div class="hero-text">
-                    <h4>I am Réka Palánki</h4>
-                    <h3>and I'm a front-end developer</h3>
-                    <a class="button" id="hero-button" href="mailto:reka.palanki@gmail.com">Hire me</a>
+        <div class="section-wrapper" id="section1">
+            <div class="filter1">
+                <div class="intro">
+                    <h2>Coding with Passion</h2>
+                    <p>This page represents my digital portfolio of front-end programming. Find below my reference work.
+                        I am also writing a blog that keeps you updated on the hottest topics around learning web
+                        development.</p>
+                    <a href="./projects.html">
+                        <button class="blue-button">Read more</button>
+                    </a>
                 </div>
-            </figure>
-
-            <section id="about">
-                <h2>About me</h2>
-                <p>I am a front-end developer with experience in HTML5, CSS3, JavaScript (ECMAScript 6), SQL and UI
-                    design. I switched from the business with working knowledge in different domains: </p>
-                <ul>
-                    <li>Finance: Procure-to-Pay and Accounts Payable</li>
-                    <li>Banking: Retail Banking and Personal Loans</li>
-                    <li>Customer Support in CRM system</li>
-                    <li>Marketing Analysis and Reporting with SQL queries</li>
-                </ul>
-            </section>
-
-            <section id="learn-programming">
-                <h2>Learn programming</h2>
-                <p>Join with me on the journey to webpage programming. I have started programming with zero knowledge in
-                    programming languages. Today in the world of web 2.0 built on community contribution and lots of
-                    online resources it is easy to get knowledge about a lot of things. Why not learn programming? </p>
-            </section>
-
-            <section id="projects">
-                <h2>Projects</h2>
-                <p>See my projects completed up to now: </p>
-                <ul>
-                    <li><a href="https://github.com/rekapalanki/My-components" target="_blank">Component repository</a>:
-                        Reusable components including buttons, header, full-page header, navbar and footer.
-                    </li>
-                    <li><a href="https://rekapalanki.github.io/Wikipedia-article/">Wikipedia-article copy</a>:
-                        Responsive webpage with numerous components styled with CSS.
-                    </li>
-                    <li><a href="https://rekapalanki.github.io/wedding-website/" target="_blank">Wedding website</a>:
-                        Responsive webpage based on a ready Adobe XD mockup design. I created the HTML structure
-                        with wireframing, then added CSS styling.
-                    </li>
-                    <li><a href="./a-simple-blog-theme/index.html" target="_blank">Blog template</a>: A flexible blog
-                        theme built with responsive web design. </li>
-                    <li><a href="./e-komo-mai/index.html" target="_blank">Online business card</a>: A simple one-page
-                        website for a business to foundate online presence.</li>
-                    <li><a href="https://github.com/rekapalanki/react-scoreboard">Scoreboard</a>: Scoreboard
-                        single-page-application built with React using Router, forms and refs.
-                    </li>
-                    <li><a href="https://cotd-1122.rekapalanki.vercel.app/" target="_blank">Fish food store</a>:
-                        Customizable single page application store engine with authentication module.
-                        <a href="https://github.com/rekapalanki/react-cotd">Find code base here.</a> Built with React
-                        library, data stored on Google Firebase, deployed on
-                        <a href="https://vercel.com/">vercel.com</a> with serverless technology.
-                    </li>
-                </ul>
-            </section>
-
-            <section id="technologies">
-                <h2>Technologies</h2>
-                <ul>
-                    <li class="technologies"><i class='fab fa-js-square'></i> JavaScript (ES6, JS 2017)</li>
-                    <li class="technologies"><i class='fab fa-react'></i> React</li>
-                    <li class="technologies"><i class="fas fa-cloud"></i>Static websites and serverless technologies
-                        using Next.js</li>
-                    <li class="technologies"><i class='fab fa-google'></i> Firebase</li>
-                    <li class="technologies"><i class="fas fa-database"></i> SQL queries</li>
-                    <li class="technologies"><i class='fab fa-html5'></i> HTML5</li>
-                    <li class="technologies"><i class='fab fa-css3-alt'></i> CSS3</li>
-                    <li class="technologies"><i class="fab fa-npm"></i> npm scripts</li>
-                    <li class="technologies"><i class="fas fa-terminal"></i> CLI commands</li>
-                    <li class="technologies"><i class='fab fa-github-square'></i> Git version control</li>
-                </ul>
-            </section>
-
-            <section id="pagesIRead">
-                <h2>Pages I read</h2>
-                <ul>
-                    <li><a href="https://sanfranciscoboljottem.com/" target="_blank">San Franciscoból Jöttem</a> (HU)
-                    </li>
-                    <li><a href="https://codeberryschool.com/" target="_blank">CodeBerry</a> (HU)</li>
-                    <li><a href="https://www.w3schools.com/" target="_blank">w3schools</a></li>
-                    <li><a href="https://css-tricks.com/" target="_blank">CSS-Tricks</a></li>
-                    <li><a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a></li>
-                    <li><a href="https://wesbos.com/courses" target="_blank">Wes Bos</a></li>
-                    <li><a href="https://www.taniarascia.com/" target="_blank">Tania Rascia</a></li>
-                </ul>
-            </section>
-
-            <section id="contact-me">
-                <h2>Contact me</h2>
-                <ul>
-                    <li><a href="https://gmail.com/#" title="Gmail" target="_blank"><i
-                                class="far fa-2x fa-envelope"></i></a>
-                    <li><a href="https://www.linkedin.com/in/rekapalanki/" title="LinkedIn" target="_blank"><i
-                                class="fab fa-2x fa-linkedin"></i></a>
-                    <li><a href="https://maps.app.goo.gl/ZEkSadohGX3j3q2H6" title="Google Maps" target="_blank"><i
-                                class="fas fa-2x fa-map-marker-alt"></i></a></li>
-                </ul>
-            </section>
-
+            </div>
         </div>
+        <div class="section-wrapper" id="section2">
+            <div class="filter2">
+                <div class="feature">
+                    <a href="./projects.html#array-exercises">
+                        <img src="./public/logo/namecheap-default.png" alt="logo-big" class="logo-big">
+                    </a>
+                    <h2>Encouraging to learn coding</h2>
+                    <p>Join with me on the journey to webpage programming. I have started programming with zero
+                        knowledge in programming languages. Today in the world of web 2.0 built on community
+                        contribution and lots of online resources it is easy to get knowledge about a lot of things. Why
+                        not learn programming?</p>
+                </div>
+            </div>
+        </div>
+        <div class="section-wrapper" id="section3">
+            <div class="filter3">
+                <div class="info-wrapper">
+                    <a href="./projects.html">
+                        <div class="feature-info">
+                            <img src="./public/projects/mockup navigation.png" class="feature-img" alt="mockup">
+                            <h4>Projects</h4>
+                            <p>I am involved in various activities like web development, web design, code challenges,
+                                web course tests and blogging. </p>
+                        </div>
+                    </a>
+                    <a href="./projects.html#array-exercises">
+                        <div class="feature-info">
+                            <img src="./public/projects/learn.png" class="feature-img" alt="learn">
+                            <h4>Learn</h4>
+                            <p>Since learning have been gamified it means lots of fun for those who decide to pick-up
+                                coding
+                                knowledge. Why not convert your passion into your occupation?</p>
+                        </div>
+                    </a>
+                    <a href="./codecafe/index.html">
+                        <div class="feature-info">
+                            <img src="./public/projects/codecafe.png" class="feature-img" alt="blog codecafe">
+                            <h4>Blog</h4>
+                            <p>Read about the hottest topics like evaluation of programming courses, difference between
+                                web
+                                design and web development, and so on.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="section-wrapper" id="projects">
+            <div class="filter4">
+                
+                <div class="projects">
+                    <h2>Projects</h2>
+                    <div class="cards left">
+
+                        <div class="card-big-1" id="web-design">
+                        <!-- <div class="wrapper">
+                        <div class="mockup-outside">
+                        <div class="mockup-inside"> -->
+                            <a href="./projects.html#kilipue-re-design">
+                                <h3 class="inline card-title">Web design</h3>
+                                <p class="inline float-right"><i class="far fa-lightbulb"></i></p>
+                                <p class="cards-description">Re-designing kilipuedesign site included various design stages 
+                                like planning the sitemap, creating a wireframe in Figma and setting up a detailed mockup 
+                                with typography, color coding, button design, collecting pictures and icons. <br><br><br><br>
+                            </p>
+                                <p class="float-left"><i class="far fa-eye"></i> 26</p>
+                            </a>
+                        <!--  </div>
+                        </div>
+                        </div> -->
+                        </div>
+
+                        <div class="card-small" id="vanilla-javascript">
+                            <a href="./projects.html#turtle-run-game">
+                                <h3 class="inline card-title">JavaScript</h3>
+                                <p class="inline float-right"><i class="far fa-lightbulb"></i></p>
+                                <p class="cards-description">JavaScript projects include creating games for learning 
+                                purposes, experimenting with forms and creating learning resources. <br><br><br><br>
+                                </p>
+                                <p class="float-left"><i class="far fa-eye"></i> 12</p>
+                            </a>
+                        </div>
+
+                        <div class="card-small" id="learning-resources">
+                            <a href="./projects.html#array-exercises">
+                                <h3 class="inline card-title">Learning</h3>
+                                <p class="inline float-right"><i class="far fa-lightbulb"></i></p>
+                                <p class="cards-description">Besides learning by doing the method of learning by 
+                                teaching is another technique of creating process excellence. <br><br><br><br>
+                                </p>
+                                <p class="float-left"><i class="far fa-eye"></i> 45</p>
+                            </a>
+                        </div>
+
+                        <div class="card-big-2" id="react">
+                            <a href="./projects.html#react-scoreboard">
+                                <h3 class="inline card-title">React</h3>
+                                <p class="inline float-right"><i class="far fa-lightbulb"></i></p>
+                                <p class="cards-description">React is a powerful front-end development library for single page
+                                    applications.  <br><br><br><br>
+                                </p>
+                                <p class="float-left"><i class="far fa-eye"></i> 9</p>
+                            </a>
+                        </div>
+
+                        <!-- <div class="card-small">
+                            <a href="#projects">
+                                <h3 class="inline card-title">Card Title</h3>
+                                <p class="inline float-right"><i class="far fa-lightbulb"></i></p>
+                                <p class="cards-description">Card description text about this particular project Card description 
+                                    text about this
+                                    particular project <br><br><br><br>
+                                </p>
+                                <p class="float-left"><i class="far fa-eye"></i> 12</p>
+                            </a>
+                        </div> -->
+
+                        <!-- <div class="card-small">
+                            <a href="#projects">
+                                <h3 class="inline card-title">Card Title</h3>
+                                <p class="inline float-right"><i class="far fa-lightbulb"></i></p>
+                                <p class="cards-description">Card description text about this particular project Card description 
+                                    text about this
+                                    particular project <br><br><br><br>
+                                </p>
+                                <p class="float-left"><i class="far fa-eye"></i> 12</p>
+                            </a>
+                        </div> -->
+
+                        <!-- <div class="card-small">
+                            <a href="#projects">                            
+                                <h3 class="inline card-title">Card Title</h3>
+                                <p class="inline float-right"><i class="far fa-lightbulb"></i></p>
+                                <p class="cards-description">Card description text about this particular project Card description 
+                                    text about this
+                                    particular project <br><br><br><br>
+                                </p>
+                                <p class="float-left"><i class="far fa-eye"></i> 12</p>
+                        </a>
+                        </div> -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottomShadow"></div>
 
     </main>
 
     <footer>
-        <div id="copyright"><small>© 2020 <strong id="brand-font">🌊 kilipuedesign 🌊</strong> All Rights
-                Reserved</small></div>
-        <nav id="footerLinks">
-            <a href="#">Back to Top</a>
-            <a href="#">Terms Of Use</a>
-            <a href="#">Privacy</a>
-        </nav>
+        <div class="footerWrapper">
+
+            <div class="footerContent">
+                <div class="placeholder"></div>
+                <img class="logo-dark-small" src="./public/logo/namecheap-default.png" alt="logo">
+                <div class="footerLinks">
+                    <a href="./index.html">Home</a>
+                    <a href="./about.html">About</a>
+                    <a href="./codecafe/index.html">Writings</a>
+                </div>
+                <div class="footerLinks">
+                    <a href="#projects">Projects</a>
+                    <a href="">Learning</a>
+                    <a href="mailto:reka.palanki@gmail.com">Contact</a>
+                </div>
+
+                <div class="contact-me-wrapper">
+                    <p class="contact-me">Stay connected via:</p>
+                    <div class="icons contact-me">
+                        <ul>
+                            <li>
+                                <a href="https://hu.linkedin.com/in/rekapalanki"><i class="fab fa-linkedin"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/rekapalanki/"><i class="fab fa-github"></i></a>
+                            </li>
+                            <li>
+                                <a href="mailto:reka.palanki@gmail.com"><i class="fas fa-envelope"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footerBottom">
+                <p><small>
+                        ★。＼｜／。★
+                    </small>
+                </p>
+                <small class="made-in">Made with ♡ in Hungary ✧ <span id="footerDate"></span> kilipuedesign (C) ✧ All
+                    rights reserved
+                </small>
+                <p>
+                    <small>
+                        ★。／｜＼。★
+                    </small>
+                </p>
+            </div>
+
+        </div>
     </footer>
+
 
 </body>
 

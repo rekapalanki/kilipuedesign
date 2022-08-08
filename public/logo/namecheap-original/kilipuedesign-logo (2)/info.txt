@@ -1,0 +1,18 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: OleoScript-Bold
+font link: https://fonts.google.com/specimen/Oleo+Script
+font author: soytutype fonts
+font author site: https://twitter.com/soytutype
+Slogan Font: WorkSans-Light.ttf
+
+icon designer: Nathan Diesel
+icon designer link: /Diesel
+        
+
+fontColor: {"hex":"#935E24"}
+bgColor: {"hex":"#2B282C"}
+iconColor: {"hex":"#935E24"}
+sloganColor: {"hex":"#FFAD2F"}
+      
